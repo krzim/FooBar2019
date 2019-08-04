@@ -79,8 +79,6 @@ def solution(start, length):
     return qs
 
 
-out = solution(0, 3)
-assert out == 2
-
-out = solution(17, 4)
-assert out == 14
+if __name__ == "__main__":
+    assert solution(0, 3) == 2
+    assert solution(17, 4) == 14

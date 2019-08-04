@@ -124,7 +124,7 @@ def solution(dimensions, your_position, guard_position, distance):
         if vec in vectors:
             if vectors[vec] > scale:
                 del vectors[vec]
-    return len(vectors), vectors, me_images, guard_images
+    return len(vectors)
 
 
 if __name__ == "__main__":

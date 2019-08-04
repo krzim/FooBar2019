@@ -70,8 +70,6 @@ def solution(xs):
     return "0"
 
 
-out = solution([2, 0, 2, 2, 0])
-assert out == "8"
-
-out = solution([-2, -3, 4, -5])
-assert out == "60"
+if __name__ == "__main__":
+    assert solution([2, 0, 2, 2, 0])  == "8"
+    assert solution([-2, -3, 4, -5]) == "60"

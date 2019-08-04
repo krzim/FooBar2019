@@ -51,8 +51,6 @@ def solution(l):
     return sum([len(lookup[j]) for i in range(length - 1) for j in lookup[i]])
 
 
-out = solution([1, 2, 3, 4, 5, 6])
-assert out == 3
-
-out = solution([1, 1, 1])
-assert out == 1
+if __name__ == "__main__":
+    assert solution([1, 2, 3, 4, 5, 6]) == 3
+    assert solution([1, 1, 1]) == 1

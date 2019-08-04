@@ -88,8 +88,6 @@ def solution(digits):
     return 0
 
 
-out = solution([3, 1, 4, 1])
-assert out ==  4311
-
-out = solution([3, 1, 4, 1, 5, 9])
-assert out == 94311
+if __name__ == "__main__":
+    assert solution([3, 1, 4, 1]) ==  4311
+    assert solution([3, 1, 4, 1, 5, 9]) == 94311

@@ -92,8 +92,6 @@ def solution(n, b):
     return cycle_len
 
 
-out = solution('1211', 10)
-assert out == 1
-
-out = solution('210022', 3)
-assert out == 3
+if __name__ == "__main__":
+    assert solution('1211', 10) == 1
+    assert solution('210022', 3) == 3

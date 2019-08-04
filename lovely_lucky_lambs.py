@@ -95,10 +95,6 @@ def solution(total_lambs):
     return max_paid - min_paid
 
 
-out = solution(143)
-assert out == 3
-
-out = solution(10)
-assert out == 1
-
-print(solution(1))
+if __name__ == "__main__":
+    assert solution(143) == 3
+    assert solution(10) == 1

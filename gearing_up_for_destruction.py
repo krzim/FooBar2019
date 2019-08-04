@@ -61,8 +61,8 @@ Output: -1,-1
 import fractions
 
 
-def dot(A, B):
-    return [sum(A[i][k]*B[k] for k in range(len(B))) for i in range(len(A))]
+def dot(mat, vec):
+    return [sum(mat[i][k] * vec[k] for k in range(len(vec))) for i in range(len(mat))]
 
 
 def generate_inverse(n):
@@ -113,8 +113,6 @@ def solution(pegs):
     return radii[0].numerator, radii[0].denominator
 
 
-out = solution([4, 30, 50])
-assert out == (12, 1)
-
-out = solution([4, 17, 50])
-assert out == (-1, -1)
+if __name__ == "__main__":
+    assert solution([4, 30, 50]) == (12, 1)
+    assert solution([4, 17, 50]) == (-1, -1)

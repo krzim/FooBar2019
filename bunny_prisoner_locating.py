@@ -64,5 +64,5 @@ def solution(x, y):
 
 
 if __name__ == "__main__":
-    assert solution(5, 10) == 96
-    assert solution(3, 2) == 9
+    assert solution(5, 10) == "96"
+    assert solution(3, 2) == "9"

@@ -78,11 +78,7 @@ def solution(h, q):
     return [parents[child] for child in q]
 
 
-out = solution(3, [7, 3, 5, 1])
-assert out == [-1, 7, 6, 3]
-
-out = solution(5, [19, 14, 28])
-assert out == [21, 15, 29]
-
-out = solution(3, [1, 4, 7])
-assert out == [3, 6, -1]
+if __name__ == "__main__":
+    assert solution(3, [7, 3, 5, 1]) == [-1, 7, 6, 3]
+    assert solution(5, [19, 14, 28]) == [21, 15, 29]
+    assert solution(3, [1, 4, 7]) == [3, 6, -1]
